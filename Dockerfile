@@ -10,5 +10,5 @@ EXPOSE 80
 WORKDIR /
 
 COPY index.html index.html
-
-CMD [ "python", "-m", "SimpleHTTPServer", "80" ]
+COPY server.py server.py
+CMD [ "python","server.py" ]
