@@ -6,7 +6,7 @@ import os
 GB = 1024*1024*1024
 a = "a" * (1 * GB)
 
-PORT = 8000
+PORT = os.environ['LISTEN_PORT']
 
 Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 Handler.extensions_map.update({
